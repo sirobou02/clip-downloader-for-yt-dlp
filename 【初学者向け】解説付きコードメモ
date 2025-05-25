@@ -30,6 +30,8 @@ echo 動画をDL中……
 
 @rem 時間指定の有無によって若干コードが変わる(yt-dlpをコマンドラインで操作する時のコマンドそのまま、一部を変数に変えただけ)
 @rem 必ず「MP4形式」の「H.264コーデック」で出力されるオプション付き
+@rem mp4形式に指定しない場合、m4aやflvなど動画によって違う拡張子になり動画編集ソフトで読み込めない場合もあるため
+@rem H.264コーデックを指定する意味はあまりないが、このコーデックだと確実にAdobe Premiere Proでも読み込めるため一応指定している
 if %length% == n (
 	yt-dlp %url% -f bestvideo[ext=mp4]+bestaudio[ext=m4a] -S vcodec:h264
 ) else (
