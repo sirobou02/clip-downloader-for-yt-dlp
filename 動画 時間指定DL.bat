@@ -1,30 +1,30 @@
 @echo off
 setlocal
 
-echo ƒAƒbƒvƒf[ƒgŠm”F’†cc
+echo ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆç¢ºèªä¸­â€¦â€¦
 yt-dlp -U > nul
 if %errorlevel% neq 0 (
 	echo;
-	echo yt-dlp‚ªŒ©‚Â‚©‚ç‚È‚¢‚©AƒAƒbƒvƒf[ƒg‚ÉŽ¸”s‚µ‚Ü‚µ‚½
+	echo yt-dlpãŒè¦‹ã¤ã‹ã‚‰ãªã„ã‹ã€ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã«å¤±æ•—ã—ã¾ã—ãŸ
 	pause
 	exit /b
 )
-echo Šm”FŠ®—¹
+echo ç¢ºèªå®Œäº†
 echo;
 
-echo “®‰æ‚ÌURL‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢
-echo ¦“¯‚¶“®‰æ‚©‚çDL‚·‚éê‡Aæ‚ÉDL‚µ‚½“®‰æ‚Ì–¼‘O‚ð•Ï‚¦‚Ä‚¨‚­‚±‚Æ
+echo å‹•ç”»ã®URLã‚’å…¥åŠ›ã—ã¦ãã ã•ã„
+echo â€»åŒã˜å‹•ç”»ã‹ã‚‰DLã™ã‚‹å ´åˆã€å…ˆã«DLã—ãŸå‹•ç”»ãƒ•ã‚¡ã‚¤ãƒ«ã®åå‰ã‚’å¤‰ãˆã¦ãŠãã“ã¨
 set /p url=""
 echo;
 
-echo DL‚·‚é“®‰æ‚ÌŽžŠÔ‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢
-echo —á¨00:00-01:30
-echo ¦‘OŒã10•b‚­‚ç‚¢‚Í—]—T‚ðŽ‚Á‚ÄŽw’è‚µ‚Ä‚­‚¾‚³‚¢@‚»‚Ì•”•ª‚Í‰f‘œ‚ª—‚ê‚Ü‚·
-echo ¦Žw’è‚µ‚È‚¢ê‡‚Íunv‚ð“ü—Í
+echo DLã™ã‚‹å‹•ç”»ã®æ™‚é–“ã‚’æŒ‡å®šã—ã¦ãã ã•ã„
+echo ä¾‹â†’00:00-01:30
+echo â€»å‰å¾Œ10ç§’ãã‚‰ã„ã¯ä½™è£•ã‚’æŒã£ã¦æŒ‡å®šã—ã¦ãã ã•ã„ã€€ãã®éƒ¨åˆ†ã¯æ˜ åƒãŒä¹±ã‚Œã¾ã™
+echo â€»æŒ‡å®šã—ãªã„å ´åˆã¯ã€Œnã€ã‚’å…¥åŠ›
 set /p length=""
 echo;
 
-echo “®‰æ‚ðDL’†cc
+echo å‹•ç”»ã‚’DLä¸­â€¦â€¦
 
 if %length% == n (
 	yt-dlp %url% -f bestvideo[ext=mp4]+bestaudio[ext=m4a] -S vcodec:h264
