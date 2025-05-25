@@ -4,7 +4,7 @@
 
 ## 用意するもの
 https://github.com/yt-dlp/yt-dlp/releases
-- ※上記サイトから下記を準備してください
+ ※上記サイトから下記を準備してください
 - yt-dlp.exe
 - ffmpeg.exe
 - ffprobe.exe
